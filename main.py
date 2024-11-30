@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-def get_existing_model_name():
+def get_existing_model_name() -> str:
     client_models = client.list().models
     if not client_models:
         raise Exception("Ollama Client doesn't have any model. \nPull model from ollama registry: \"ollama pull <model>\" e.g. \"ollama pull llama3.2\"")
