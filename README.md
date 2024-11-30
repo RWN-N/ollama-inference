@@ -14,14 +14,32 @@ This project provides a simple Flask-based REST API to interface with the Ollama
 
 ## Installation
 
-### Step 1: Install Python Dependencies
+### Step 1: Create and Activate a Virtual Environment (Optional)
 
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+
+2. Activate the virtual environment:
+
+   - On Windows:
+     ```bash
+     "venv\Scripts\activate"
+     ```
+
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+### Step 2: Install Python Dependencies
 Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 2: Set Up and Run Ollama
+### Step 3: Set Up and Run Ollama
 
 1. Download and install the Ollama runtime from their [official website](https://ollama.com/).
 
